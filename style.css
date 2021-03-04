@@ -1,0 +1,209 @@
+* {
+  color: white;
+  font-family: "Arial";
+}
+
+.container {
+  max-width: 1280px;
+}
+
+body {
+  margin: 0;
+  padding: 0p;
+}
+
+#sticky-logo {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 1;
+}
+
+#games-dropdown {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+#games-dropdown li {
+  position: relative;
+  z-index: 1;
+  width: 200%;
+  left: -15px;
+}
+#games-dropdown li a {
+  padding: 0;
+  margin: 0;
+}
+#games-dropdown li:hover {
+  background-color: #085251;
+}
+#games-dropdown li:not(:first-child) {
+  border-top: white 1px solid;
+}
+
+#games-dropdown.active {
+  display: block;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+header {
+  background-color: black;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+header #header-logo {
+  margin: 15px 0 20px 0;
+}
+header nav .row {
+  margin-bottom: 0;
+}
+header nav ul {
+  list-style-type: none;
+  font-weight: 600;
+  display: flex;
+}
+header nav ul li {
+  background-color: #076766;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+header nav ul li a {
+  padding: 0 10px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 800px;
+}
+.content main {
+  background-color: #076766;
+  padding: 10px;
+}
+.content main .main-background {
+  height: 100%;
+  background-color: #1e3b39;
+  padding: 10px;
+}
+.content main .main-background h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  padding: 20px;
+  border-bottom: solid black 1px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.content main .main-background .text {
+  border-top: solid #646f71 1px;
+  padding: 10px;
+}
+.content aside {
+  background-color: #085251;
+  padding: 10px;
+}
+.content aside .aside-headers {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.content aside .aside-background {
+  height: 100%;
+  background-color: #022a29;
+  padding: 10px;
+}
+.content aside .aside-background .sharing-links {
+  display: flex;
+  gap: 0 15px;
+  margin-bottom: 20px;
+}
+.content aside .aside-background .share {
+  margin-bottom: 40px;
+}
+.content aside .aside-background .categories {
+  margin-bottom: 20px;
+}
+.content aside .aside-background .categories a {
+  display: block;
+  font-size: 16px;
+}
+.content aside .aside-background .recent-stories {
+  margin-bottom: 10vh;
+}
+.content aside .aside-background .recent-stories .carousel-indicators {
+  bottom: -50px;
+}
+.content aside .aside-background .recent-stories .carousel-indicators li {
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+}
+.content aside .aside-background .recent-stories .carousel-inner {
+  margin-bottom: -50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #076766;
+  align-items: center;
+  padding: 10px;
+}
+footer p {
+  margin: 0 10px;
+}
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+footer ul li {
+  background-color: #076766;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+footer ul li a {
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  header, .content, .row {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  header ul, .content ul, .row ul {
+    display: inline-block;
+  }
+  header ul li, .content ul li, .row ul li {
+    display: inline-block;
+  }
+
+  footer {
+    padding: 1rem !important;
+  }
+  footer ul li, footer p {
+    display: block !important;
+  }
+
+  #sticky-logo {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
